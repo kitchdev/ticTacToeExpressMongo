@@ -4,10 +4,10 @@ const mongoose = require('mongoose')
 const app = express()
 const port = 3000
 
-const newMove = require('./tictactoe')
+const newMove = require('./lib/tictactoe')
+const isGameOver = require('./lib/gameOver')
 
 const TicTacToeMap = require('./model/tictactoeMap')
-const isGameOver = require('./lib/gameOver')
 
 const twoDArray = [
   [' ', ' ', ' '],
